@@ -49,6 +49,14 @@
   failed_when: "'ECHI' in lspci_output.stdout or 'xHCI' in lspci_output.stdout"
   changed_when: false
 
+- name: Disable swap
+  command: swapoff /swapfile
+
+- name: Delete swap file
+  file:
+    path: /swapfile
+    state: absent
+
 - name: Fill disk with zeros to assist with compression
   shell: dd if=/dev/zero of=/bigfile bs=1M; sync; rm /bigfile
   changed_when: false
