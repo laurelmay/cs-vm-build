@@ -11,6 +11,8 @@ skel_desktop_file_path: "{{ skel_path }}/Desktop"
 packages_to_remove:
   - bluez*
   - btrfs-tools
+  - celluloid
+  - drawing
   - fonts*gujr*
   - fonts*guru*
   - fonts-beng*
@@ -59,6 +61,7 @@ packages_to_remove:
   - hyphen-it
   - hyphen-pt*
   - hyphen-ru
+  - hypnotix
   - libreoffice*
   - linux*oem
   - mint-artwork-mate
@@ -68,6 +71,7 @@ packages_to_remove:
   - mint-backgrounds-tara
   - mint-backgrounds-tessa
   - mint-backgrounds-tina
+  - mint-backgrounds-ulyana
   - mono-*
   - myspell-*
   - mythes-de
@@ -77,9 +81,11 @@ packages_to_remove:
   - mythes-it
   - mythes-pt-pt
   - mythes-ru
+  - neofetch
   - openvpn
   - pidgin*
   - pix*
+  - redshift*
   - rhythmbox*
   - simple-scan
   - timeshift
@@ -87,5 +93,6 @@ packages_to_remove:
   - tomboy
   - transmission*
   - vlc*
+  - warpinator
   - wbritish
   - xscreensaver-*
